@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="ua">
+   <head>
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <link rel="shortcut icon" href='images/logo.png' type="image/png">
+      <title>Авто із США</title>
+      <meta name="description" content="Авто із США за фіксованою ціною. Доставка авто 40-60 днів. 100% гарантія на кінцеву ціну. Безкоштовний підбір найкращих автівок. Обери свій автомобіль економлячи до 4000$.">
+      <link href="css/styles.min.css@v=1.2.css" rel="stylesheet" type="text/css">
+      <link href="css/vendor.min.css" rel="stylesheet" type="text/css">
+      <!-- Meta Pixel Code -->
+      
+      <!-- End Meta Pixel Code -->
+      <!-- Google tag (gtag.js) -->
+      <!-- End Google tag (gtag.js) -->
+      <style>
+         html{
+         min-width:400px;
+         scroll-behavior: smooth;
+         }
+         body{
+         min-width:400px;
+         }
+         .special_3{
+         background-image:radial-gradient(circle, rgba(232,19,19,0.1) 3%, rgba(149,4,4,0.2) 78%); 
+         }
+         .special_1{
+         overflow:hidden;
+         }
+         .special_1::after{
+         width:5rem;
+         height:20rem;
+         top:50%;
+         content:'';
+         position:absolute;
+         -webkit-transform:rotate(45deg) translate(-50%, -50%);
+         transform:rotate(45deg) translate(-50%, -50%);
+         -webkit-animation:anim1 5s infinite ease-out;
+         animation:anim2 4s infinite ease-out;
+         background-color:rgba(255,255,255,1);
+         }
+         @keyframes anim2{
+         0%{
+         left:-15rem;
+         }
+         30%{
+         left:100%;
+         }
+         100%{
+         left:100%;
+         }
+         }
+         .special_1{
+         overflow:hidden;
+         padding:25px 80px 25px 80px;
+         background-image:radial-gradient(circle, rgb(225, 0, 0) 3%, rgb(164, 2, 2) 58%);
+         background-size:200% 200%;
+         background-position:50% 100%;
+         -webkit-box-shadow:0 0 8px 2px rgba(255, 36, 36, 0.6);
+         box-shadow:0 0 8px 2px rgba(255, 36, 36, 0.6);
+         transition:all 0.5s;
+         -webkit-transform:scale(1,1);
+         transform:scale(1,1);
+         border:1px solid rgba(119, 0, 0,0.9);
+         }
+         .special_1:hover{
+         background-image:radial-gradient(circle, rgb(225, 0, 0) 3%, rgb(164, 2, 2) 58%);
+         -webkit-box-shadow:0 0 15px 0 rgba(255, 36, 36, 1);
+         box-shadow:0 0 15px 0 rgba(255, 36, 36, 1);
+         -webkit-transform:scale(1.2,1.2);
+         transform:scale(1.2,1.2);
+         }
+         .special_10{
+         width: 100%;
+         height: 100%;
+         -webkit-object-fit: cover;
+         object-fit: cover;
+         max-width: 100%;
+         }
+         .special_11{
+         display:flex;
+         flex-wrap:wrap;
+         position:relative;
+         }
+         .special_0{
+         box-sizing:unset;
+         }
+         .special_9{
+         display:block;
+         width:150px;
+         height:150px;
+         border-radius:20px;
+         margin-left:30px;
+         margin-right:30px;
+         margin-top:30px;
+         overflow:hidden;
+         position:relative;
+         }
+         .special_9::after{
+         content:'';
+         position:absolute;
+         height:100%;
+         width:100%;
+         background: rgb(244,173,255);
+         background: radial-gradient(circle, rgba(0, 55, 255, 0) 0%, rgba(0, 55, 255, 1) 100%); 
+         top:0;
+         left:0;
+         transition:all 0.5s;
+         opacity:0;
+         }
+         .special_9:hover::after{
+         opacity:0.6;
+         }
+         @media screen and (max-width:990px){
+         .special_9{
+         width:120px;
+         height:120px;
+         margin-left:30px;
+         margin-right:30px;
+         margin-top:30px;
+         }
+         }
+         @media screen and (max-width:650px){
+         .special_9{
+         width:100px;
+         height:100px;
+         margin-left:10px;
+         margin-right:10px;
+         margin-top:30px;
+         }
+         .special_1{
+         padding:25px 35px 25px 35px;
+         }
+         .special_4{
+         font-size:39px !important;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <header class="header">
+         <div class="header__container">
+            <div class="header__logo">
+               <a href="javascript:void(0)" style="display: flex; align-items: center; gap: 10px" title="Auto Mix">
+                  <img src="images/logo.png" alt="Auto-mix" title="Auto Mix" width="100" height="100">
+                  <div style="color: #fff; font-size: 28px; font-weight: 700; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Auto-Mix</div>
+               </a>
+            </div>
+            <div class="header__menu">
+               <a href="index.html#experience" title="Про нас" class="js-section-nav" style="color:rgba(255,255,255,0.8)">Про нас</a>
+               <a href="index.html#vehicles" title="Послуги" class="js-section-nav" style="color:rgba(255,255,255,0.8)">Послуги</a>
+               <a href="index.html#contacts" title="Контакти" class="js-section-nav" style="color:rgba(255,255,255,0.8)">Контакти</a>
+            </div>
+            <div class="header__phones contact contact_header">
+               <div class="contact__content contact__content_phones">
+                  <a href="tel:380632044804" style="margin:0;color:rgba(255,255,255,0.8)">+380 63 204 48 04</a>
+               </div>
+            </div>
+            <div class="header__btns">
+               <div class="header__btn">
+                  <a onclick="showForm()"  class="btn btn_primary  js-callback special_2" title="Замовити дзвінок">Замовити дзвінок</a>
+               </div>
+               <div class="header__nav-btn">
+                  <button class="btn btn_nav js-nav-toggle"><span></span><span></span><span></span></button>
+               </div>
+            </div>
+         </div>
+      </header>
+      <nav class="nav js-nav">
+         <div class="nav__block">
+            <div class="nav__close js-nav-close">
+               <span></span>
+               Закрити
+            </div>
+            <span class="nav__title">Навігація</span>
+            <ul>
+               <li><a class="js-section-nav" href="index.html#steps" title="Процес покупки">Процес покупки</a></li>
+               <li><a class="js-section-nav" href="index.html#prices" title="Популярні авто">Популярні авто</a></li>
+               <li><a class="js-section-nav" href="index.html#experience" title="Про нас">Про нас</a></li>
+               <li><a class="js-section-nav" href="index.html#vehicles" title="Наша команда">Наша команда</a></li>
+               <li><a class="js-section-nav" href="index.html#reviews" title="Відгуки клієнтів">Відгуки клієнтів</a></li>
+               <li><a class="js-section-nav" href="index.html#contacts" title="Контакти">Контакти</a></li>
+            </ul>
+         </div>
+         <div class="nav__block">
+            <div class="nav__phones contact">
+               <span class="contact__tip">Натисни для дзвінка</span>
+               <div class="contact__icon">
+                  <svg width="25" height="25">
+                     <path d="M24.287 17.666l-5.469-3.344a1.167 1.167 0 00-.459-.093 1.17 1.17 0 00-.909.43l-2.421 2.959a18.084 18.084 0 01-8.652-8.652l2.959-2.422a1.167 1.167 0 00.432-.907 1.167 1.167 0 00-.1-.46L7.324.708a1.181 1.181 0 00-1.082-.709 1.171 1.171 0 00-.261.03L.903 1.201A1.173 1.173 0 000 2.344 22.654 22.654 0 0022.656 25a1.174 1.174 0 001.144-.908l1.171-5.078a1.19 1.19 0 00.029-.261 1.184 1.184 0 00-.713-1.087z" fill="#ffa200"/>
+                  </svg>
+               </div>
+               <div class="contact__content contact__content_phones">
+                  <a href="tel:380632044804" style="margin:0">+380 63 204 48 04</a>
+               </div>
+            </div>
+            <div class="nav__socials socials">
+               <a target="_blank" href="https://www.facebook.com/RTAutoLviv/
+                  " title="https://www.facebook.com/RTAutoLviv/
+                  ">
+                  <svg width="25" height="25">
+                     <path xmlns="http://www.w3.org/2000/svg" d="M24.218 12.109A12.107 12.107 0 0012.109 0 12.107 12.107 0 000 12.109a12.114 12.114 0 0010.217 11.963V15.61H7.141v-3.5h3.076V9.442c0-3.035 1.807-4.711 4.574-4.711a18.637 18.637 0 012.711.236v2.979h-1.528a1.75 1.75 0 00-1.973 1.891v2.273h3.358l-.537 3.5h-2.821v8.462a12.114 12.114 0 0010.217-11.963z"/>
+                  </svg>
+               </a>
+               <a target="_blank" href="https://www.instagram.com/rt_auto_lviv/
+                  " title="https://www.instagram.com/rt_auto_lviv/
+                  ">
+                  <svg width="25" height="25">
+                     <path xmlns="http://www.w3.org/2000/svg" d="M10.946 5.331a5.6 5.6 0 00-5.61 5.61 5.6 5.6 0 005.61 5.61 5.6 5.6 0 005.61-5.61 5.6 5.6 0 00-5.61-5.61zm0 9.258a3.654 3.654 0 01-3.647-3.648 3.651 3.651 0 013.647-3.647 3.651 3.651 0 013.648 3.647 3.654 3.654 0 01-3.648 3.648zm7.148-9.487a1.309 1.309 0 00-1.309-1.309 1.309 1.309 0 00-1.306 1.308 1.306 1.306 0 001.309 1.309 1.306 1.306 0 001.307-1.309zM21.81 6.43a6.476 6.476 0 00-1.768-4.585A6.519 6.519 0 0015.457.077c-1.807-.1-7.222-.1-9.028 0A6.509 6.509 0 001.844 1.84 6.5 6.5 0 00.079 6.421c-.1 1.807-.1 7.222 0 9.028a6.476 6.476 0 001.766 4.589 6.527 6.527 0 004.585 1.768c1.807.1 7.222.1 9.028 0a6.476 6.476 0 004.585-1.768 6.519 6.519 0 001.768-4.585c.102-1.807.102-7.217 0-9.024zm-2.331 10.961a3.693 3.693 0 01-2.082 2.08c-1.44.571-4.858.439-6.45.439s-5.015.127-6.45-.439a3.693 3.693 0 01-2.08-2.08c-.571-1.44-.439-4.858-.439-6.45s-.127-5.015.439-6.45a3.693 3.693 0 012.08-2.08c1.44-.571 4.858-.439 6.45-.439s5.015-.127 6.45.439a3.693 3.693 0 012.082 2.08c.571 1.44.439 4.858.439 6.45s.13 5.015-.439 6.45z"/>
+                  </svg>
+               </a>
+            </div>
+         </div>
+      </nav>
+      <main class="landing" style="background-color:rgba(0,0,0,0.9)">
+         <section id="top" class="landing__block landing__block_top landing__block_background">
+            <div class="container">
+               <div class="top">
+                  <img class="top__logo" src="images/logo.png" alt="Auto-Mix" title="Auto-mix" width="80" height="80">
+                  <div class="top__header">
+                     <h1 class="special_4" style="color:rgba(255,255,255,0.8)">Технічний ремонт та кузовний ремонт з <span>гарантією</span> на всі види послуг </h1>
+                     <p style="color:rgba(255,255,255,0.9); line-height: 120%;">Замовте консультацію та отримайте прорахунок<br> вартості ваших робіт, а також діагностику<br> автомобіля в додачу<br> до будь-якої послуги <span>БЕЗКОШТОВНО!</span></p>
+                     <div class="top__btns">
+                        <a id="form-button"  onclick="showForm()" class="btn btn_primary  js-callback special_1" title="Замовити підбір">Записатись на сервіс</a>
+                        <a onclick="showForm()"  class="btn btn_bordered-s js-callback" title="Консультація">Консультація</a>
+                     </div>
+                  </div>
+                  <div class="top__block">
+                     <div>
+                        <ul class="top__teasers">
+                           <li style="color:rgba(255,255,255,0.8)">
+                              <strong>Миттєвий</strong>
+                              <p style="color:rgba(255,255,255,0.8)">запис на огляд</p>
+                           </li>
+                           <li style="color:rgba(255,255,255,0.8)">
+                              <strong>100%</strong> 
+                              <p style="color:rgba(255,255,255,0.8)"><span>гарантія</span> на пробіг</p>
+                           </li>
+                           <li style="color:rgba(255,255,255,0.8)">
+                              <strong>2000+</strong>
+                              <p style="color:rgba(255,255,255,0.8)">клієнтів</p>
+                           </li>
+                        </ul>
+                        <div class="top__socials socials-top">
+                           <span style="color: #fff;">Ми в соц. мережах</span>
+                           <div>
+                              <a target="_blank" href="https://www.facebook.com/sto.automix/" title="https://www.facebook.com/sto.automix/">
+                                 <svg width="25" height="25">
+                                    <path xmlns="http://www.w3.org/2000/svg" d="M24.218 12.109A12.107 12.107 0 0012.109 0 12.107 12.107 0 000 12.109a12.114 12.114 0 0010.217 11.963V15.61H7.141v-3.5h3.076V9.442c0-3.035 1.807-4.711 4.574-4.711a18.637 18.637 0 012.711.236v2.979h-1.528a1.75 1.75 0 00-1.973 1.891v2.273h3.358l-.537 3.5h-2.821v8.462a12.114 12.114 0 0010.217-11.963z"/>
+                                 </svg>
+                              </a>
+                              <a target="_blank" href="https://www.instagram.com/sto.automix/" title="https://www.instagram.com/sto.automix/
+                                 ">
+                                 <svg width="25" height="25">
+                                    <path xmlns="http://www.w3.org/2000/svg" d="M10.946 5.331a5.6 5.6 0 00-5.61 5.61 5.6 5.6 0 005.61 5.61 5.6 5.6 0 005.61-5.61 5.6 5.6 0 00-5.61-5.61zm0 9.258a3.654 3.654 0 01-3.647-3.648 3.651 3.651 0 013.647-3.647 3.651 3.651 0 013.648 3.647 3.654 3.654 0 01-3.648 3.648zm7.148-9.487a1.309 1.309 0 00-1.309-1.309 1.309 1.309 0 00-1.306 1.308 1.306 1.306 0 001.309 1.309 1.306 1.306 0 001.307-1.309zM21.81 6.43a6.476 6.476 0 00-1.768-4.585A6.519 6.519 0 0015.457.077c-1.807-.1-7.222-.1-9.028 0A6.509 6.509 0 001.844 1.84 6.5 6.5 0 00.079 6.421c-.1 1.807-.1 7.222 0 9.028a6.476 6.476 0 001.766 4.589 6.527 6.527 0 004.585 1.768c1.807.1 7.222.1 9.028 0a6.476 6.476 0 004.585-1.768 6.519 6.519 0 001.768-4.585c.102-1.807.102-7.217 0-9.024zm-2.331 10.961a3.693 3.693 0 01-2.082 2.08c-1.44.571-4.858.439-6.45.439s-5.015.127-6.45-.439a3.693 3.693 0 01-2.08-2.08c-.571-1.44-.439-4.858-.439-6.45s-.127-5.015.439-6.45a3.693 3.693 0 012.08-2.08c1.44-.571 4.858-.439 6.45-.439s5.015-.127 6.45.439a3.693 3.693 0 012.082 2.08c.571 1.44.439 4.858.439 6.45s.13 5.015-.439 6.45z"/>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <img loading="lazy" src="images/car.png">
+                        <img loading="lazy" class="js-car-lights" src="">
+                     </div>
+                  </div>
+               </div>
+               <div id="callback-form-2" class="callback-form revealator-slideup">
+                  <div class="callback-form__block callback-form__block_orange special_3" style="color:rgba(255,255,255,1);">
+                     <div class="callback-form__text" style="color:rgba(255,255,255,1);">
+                        <span>Залишити заявку</span>
+                        <span>Прямо зараз</span>
+                     </div>
+                     <p>Заповніть форму, щоб отримати безкоштовну консультацію</p>
+                     <span class="callback-form__label" style="text-align:center">Безкоштовна консультація</span>
+                  </div>
+                  <div class="callback-form__block callback-form__block_white js-callback-form-2"  id="fform1">
+                     <form class="form ajax" id="first_form">
+                        <div class="form__input">
+                           <input type="text" name="name" id="name" placeholder="Ваше ім'я" required>
+                        </div>
+                        <div class="form__input">
+                           <input type="tel" name="phone" id="phone" placeholder="+38 (000) 000 - 00 - 00" required>
+                        </div>
+                        <div class="form__input">
+                           <input type="text" name="carname" id="carname" placeholder="Який ремонт вас цікавить?" required>
+                        </div>
+                        <button type="submit" class="btn btn_bordered-p" id="form_btn1">Залишити заявку</button>
+                     </form>
+                     <div class="callback_success">
+                        <svg width="80" height="80">
+                           <use href="fonts/sprite.svg#success"/>
+                        </svg>
+                        <span class="callback-form__title">НАДІСЛАНО</span>
+                        <p></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="steps" class="landing__block landing__block_steps" style="color:rgba(255,255,255,0.8)">
+            <div class="container">
+               <span class="landing__title-opacity" style="color:rgba(255,255,255,0.8); text-align: right;">Наші<br> переваги</span>
+               <div class="landing__block-title revealator-slideright revealator-once" style="color:rgba(255,255,255,0.8)">
+                  <h2>Наші переваги</h2>
+               </div>
+               <div class="steps">
+                  <div class="steps__item revealator-slideup revealator-once">
+                     <div class="steps__counter">01</div>
+                     <div class="steps__point"></div>
+                     <div class="steps__content" style="color:rgba(255,255,255,0.8)">
+                        <img src="fonts/a-to-z.svg" style="width: 55px; height: 55px; filter: invert(66%) sepia(44%) saturate(2058%) hue-rotate(354deg) brightness(101%) contrast(106%);">
+                        <span>Повний цикл обслуговування</span>
+                        <p>Проводимо майже усі види робіт – від заміни ГРМ до встановлення системи сигналізації</p>
+                     </div>
+                  </div>
+                  <div class="steps__item revealator-slideup revealator-once">
+                     <div class="steps__counter">02</div>
+                     <div class="steps__point"></div>
+                     <div class="steps__content">
+                        <img src="fonts/price-img.svg">
+                        <span>Підлаштуємося під Ваш бюджет</span>
+                        <p>Заздалегідь проговоримо вартість робіт та підберемо запчастини саме під Ваш бюджет</p>
+                     </div>
+                  </div>
+                  <div class="steps__item revealator-slideup revealator-once">
+                     <div class="steps__counter">03</div>
+                     <div class="steps__point"></div>
+                     <div class="steps__content">
+                        <img src="fonts/time-management.svg" style="width: 55px; height: 55px; filter: invert(66%) sepia(44%) saturate(2058%) hue-rotate(354deg) brightness(101%) contrast(106%);">
+                        <span>Відсутність очікування, затримки</span>
+                        <p>Ви приїжджаєте на конкретну годину, і не стоїте в чергах</p>
+                     </div>
+                  </div>
+                  <div class="steps__item revealator-slideup revealator-once">
+                     <div class="steps__counter">04</div>
+                     <div class="steps__point"></div>
+                     <div class="steps__content">
+                        <img src="fonts/check-img.svg">
+                        <span>Ремонт і сервіс усіх популярних марок авто</span>
+                        <p>Ми ремонтуємо фактично усі популярні марки авто. </p>
+                     </div>
+                  </div>
+                  <div class="steps__item revealator-slideup revealator-once">
+                     <div class="steps__counter">05</div>
+                     <div class="steps__point"></div>
+                     <div class="steps__content">
+                        <img src="fonts/repair-img.svg">
+                        <span>Запчастини в наявності</span>
+                        <p>Ми співпрацюємо з 10+ постачальниками запчастин, тому велика кількість автозапчастин є в наявності</p>
+                     </div>
+                  </div>
+                  <div class="steps__item revealator-slideup revealator-once">
+                     <div class="steps__counter">06</div>
+                     <div class="steps__point"></div>
+                     <div class="steps__content">
+                        <img src="fonts/certificated.svg" style="width: 55px; height: 55px; filter: invert(66%) sepia(44%) saturate(2058%) hue-rotate(354deg) brightness(101%) contrast(106%);">
+                        <span>Сучасне сертифіковане обладнання</span>
+                        <p>Ми проводимо діагностику на сертифікованому обладнанні</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="landing__block-footer landing__block-footer_steps">
+                  <div></div>
+                  <div></div>
+                  <div>
+                     <a  onclick="showForm()" class="btn btn_primary js-callback">Отримати безкоштовний огляд автомобіля</a>
+                  </div>
+               </div>
+            </div>
+            <div class="landing__car-imgs landing__car-imgs_steps revealator-fade revealator-once">
+               <img src="images/rogue.png@v=1.2" alt="Процес покупки авто - 2" title="Процес покупки авто - 2" style="left:0;">
+               <img src="images/car6.png" alt="Процес покупки авто - 1" title="Процес покупки авто - 1">
+            </div>
+         </section>
+         <section id="prices" class="landing__block landing__block_prices landing__block_background" style="background-color:rgba(0,0,0,0)">
+            <div class="container">
+                <div class="landing__block-title revealator-slideright revealator-once" style="color:rgba(255,255,255,0.8)">
+                <h3>Види <span>ремонту</span></h3>
+                </div>
+                <div class="prices">
+                <div class="prices__toggles js-prices-toggler">
+                    <span class="prices__toggle prices__toggle_active" data-price="8000" onclick="price_1_func()">Діагностики та заміна масла</span>
+                    <span class="prices__toggle" data-price="11000" onclick="price_2_func()">Ремонти</span>
+                    <span class="prices__toggle" data-price="15000" onclick="price_3_func()">Кузовний ремонт</span>
+                </div>
+                <div class="swiper-container js-prices-swiper">
+                    <div class="prices__list swiper-wrapper">
+                        <div class="prices__card swiper-slide slide_1_8000_block" data-price="9500">
+                            <img loading="lazy" src="images/1.1.png" width="250" height="100" alt="Діагностика ходової" title="Діагностика ходової">
+                            <span class="prices__card-name">Діагностика ходової</span>
+                            <div class="prices__card-prices">
+                            <div>Перевіримо діагностику ходової по 20 пунктах</div>
+                            <div>Дамо рекомендації по виправленню недоліків</div>
+                            </div>
+                            <a onclick="showForm()" data-price="9500" data-vehicle="Ford fusion 2016" class="btn btn_primary js-callback btn__price" title="Записатись на огляд">Записатись на огляд</a>
+                        </div>
+                        <div class="prices__card swiper-slide slide_1_8000_block" data-price="10000">
+                            <img loading="lazy" src="images/1.2.png" width="250" height="100" alt="Комп’ютерна діагностика" title="Комп’ютерна діагностика">
+                            <span class="prices__card-name">Комп’ютерна діагностика</span>
+                            <div class="prices__card-prices">
+                                <div>Перевіряємо повну діагностику електроніки будь-якої моделі авто</div>
+                            </div>
+                            <a onclick="showForm()" data-price="10000" data-vehicle="JEEP COMPASS LATITUDE 2015" class="btn btn_primary js-callback btn__price" title="Записатись на огляд">Записатись на огляд</a>
+                        </div>
+                        <div class="prices__card swiper-slide slide_1_8000_block" data-price="10000">
+                            <img loading="lazy" src="images/1.3.png" width="250" height="100" alt="Заміна масла та фільтрів" title="Заміна масла та фільтрів">
+                            <span class="prices__card-name">Заміна масла та фільтрів</span>
+                            <div class="prices__card-prices">
+                                <div>Якісне масло з Європи правильно підібране під ваш автомобіль</div>
+                            </div>
+                            <a  onclick="showForm()" data-price="10000" data-vehicle="Volkswagen CC 2014" class="btn btn_primary js-callback btn__price" title="Записатись на заміну">Записатись на заміну</a>
+                        </div>
+                        <div class="prices__card swiper-slide slide_2_11000_block" data-price="13000">
+                            <img loading="lazy" src="images/2.1.png" width="250" height="100" alt="Ремонт АКПП і МКПП" title="Ремонт АКПП і МКПП">
+                            <span class="prices__card-name">Ремонт АКПП і МКПП</span>
+                            <div class="prices__card-prices">
+                                <div>Ремонт коробок передач з гарантією та безкоштовною заміною масла</div>
+                            </div>
+                            <a  onclick="showForm()" data-price="13000" data-vehicle="Nissan Rogue 2016" class="btn btn_primary js-callback btn__price" title="Запис на безкоштовну діагностику">Запис на безкоштовну діагностику</a>
+                        </div>
+                        <div class="prices__card swiper-slide slide_2_11000_block" data-price="14300">
+                            <img loading="lazy" src="images/2.2.png" width="250" height="100" alt="Ремонт двигуна" title="Ремонт двигуна">
+                            <span class="prices__card-name">Ремонт двигуна</span>
+                            <div class="prices__card-prices">
+                                <div>Ремонт двигуна з гарантією на пробіг 40 000 км</div>
+                            </div>
+                            
+                            <a  onclick="showForm()" data-price="14300" data-vehicle="Chevrolet Volt 2015" class="btn btn_primary js-callback btn__price" title="Запис на безкоштовну діагностику">Запис на безкоштовну діагностику</a>
+                        </div>
+                        <div class="prices__card swiper-slide slide_2_11000_block" data-price="13000">
+                            <img loading="lazy" src="images/2.3.png" width="250" height="100" alt="Ремонт рульової рейки" title="Ремонт рульової рейки">
+                            <span class="prices__card-name">Ремонт рульової рейки</span>
+                            <div class="prices__card-prices">
+                                <div>Ремонт рульової рейки з гарантією 1 рік </div>
+                            </div>
+                            <a  onclick="showForm()" data-price="13000" data-vehicle="Audi A6 Premium Plus 2015" class="btn btn_primary js-callback btn__price" title="Запис на безкоштовну діагностику">Запис на безкоштовну діагностику</a>
+                        </div>
+                        <div class="prices__card swiper-slide slide_3_15000_block" data-price="15500">
+                            <img loading="lazy" src="images/3.1.png" width="250" height="100" alt="Фарбування авто" title="Фарбування авто">
+                            <span class="prices__card-name">Фарбування авто</span>
+                            <div class="prices__card-prices">
+                                <div>Фарбування авто з гарантією, нашими майстрами з досвідом 10+ років</div>
+                            </div>
+                            <a  onclick="showForm()" data-price="15500" data-vehicle="Audi Q5 2015" class="btn btn_primary js-callback btn__price" title="Запис на прорахунок вартості">Запис на прорахунок вартості</a>
+                        </div>
+                        <div class="prices__card swiper-slide slide_3_15000_block" data-price="16400">
+                            <img loading="lazy" src="images/3.2.png" width="250" style="max-height: 220px; object-fit: cover; object-position: center;" height="100" alt="VOLKSWAGEN TIGUAN 2018" title="VOLKSWAGEN TIGUAN 2018">
+                            <span class="prices__card-name">Ремонт Кузова</span>
+                            <div class="prices__card-prices">
+                                <div>Ремонтуємо кузов з виставленням до заводських стандартів</div>
+                            </div>
+                            <a  onclick="showForm()" data-price="21500" data-vehicle="Nissan Leaf 2020" class="btn btn_primary js-callback btn__price" title="Запис на прорахунок вартості">Запис на прорахунок вартості</a>
+                        </div>
+                        <div class="prices__card swiper-slide slide_3_15000_block" data-price="21500">
+                            <img loading="lazy" src="images/3.3.png" width="250" height="100" alt="Детейлінг " title="Детейлінг ">
+                            <span class="prices__card-name">Детейлінг </span>
+                            <div class="prices__card-prices">
+                                <div>Захистимо ваше авто, відновимо шкіру або відполіруємо ваше авто до блиску</div>
+                            </div>
+                            <a  onclick="showForm()" data-price="21500" data-vehicle="Nissan Leaf 2020" class="btn btn_primary js-callback btn__price" title="Запис на прорахунок вартості">Запис на прорахунок вартості</a>
+                        </div>
+                    </div>
+                    <div class="prices__nav-btns">
+                        <div class="swiper-button swiper-button-prev swiper-button-disabled">
+                            <svg width="30" height="30">
+                            <path xmlns="http://www.w3.org/2000/svg" d="M.412 11.799a1.406 1.406 0 000 1.989l11.387 11.387a1.406 1.406 0 001.989 0l1.328-1.332a1.406 1.406 0 000-1.986l-9.022-9.064 9.025-9.067a1.406 1.406 0 000-1.986L13.788.412a1.406 1.406 0 00-1.989 0z" fill="#ffa200"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-button swiper-button-next swiper-button-disabled">
+                            <svg width="30" height="30">
+                            <path xmlns="http://www.w3.org/2000/svg" d="M15.116 13.787a1.406 1.406 0 000-1.989L3.729.411a1.406 1.406 0 00-1.989 0L.412 1.743a1.406 1.406 0 000 1.986l9.022 9.064L.41 21.86a1.406 1.406 0 000 1.986l1.328 1.328a1.406 1.406 0 001.989 0z" fill="#ffa200"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+         </section>
+         <section id="vehicles" class="landing__block landing__block_vehicles">
+            <div class="container">
+               <span class="landing__title-opacity" style="color:rgba(255,255,255,0.8)">КОМАНДА</span>
+               <div class="landing__block-title revealator-slideright revealator-once" style="color:rgba(255,255,255,0.8)">
+                     <h2>НАША <span>КОМАНДА</span></h2>
+               </div>
+               <div class="vehicles js-vehicles-list">
+                  <div class="vehicles__card">
+                     <div class="vehicles__imgs js-products-swiper swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                        <div class="swiper-wrapper">
+                           <img class="vehicles__img swiper-slide swiper-lazy swiper-lazy-loaded swiper-slide-active" loading="lazy" src="images/team/1.png">
+                        </div>
+                     </div>
+                     <div class="vehicle__card-content">
+                        <span class="vehicle__name">Віктор</span>
+                        <h1 style="font-size: 16px;">Власник та керуючий автосервісу з практичним досвідом 10+ років</h1>
+                     </div>
+                  </div>
+                  <div class="vehicles__card">
+                     <div class="vehicles__imgs js-products-swiper swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                        <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                           <img class="vehicles__img swiper-slide swiper-lazy" loading="lazy" src="images/team/5.png">
+                        </div>
+                     </div>
+                     <div class="vehicle__card-content">
+                        <span class="vehicle__name">Максим</span>
+                        <h1 style="font-size: 16px;">Майстер з діагностики та ремонту двигуна та ходової, займається заміною салону автомобіля.</h1>
+                     </div>
+                  </div>
+                  <div class="vehicles__card">
+                     <div class="vehicles__imgs js-products-swiper swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                        <div class="swiper-wrapper">
+                           <img class="vehicles__img swiper-slide swiper-lazy swiper-lazy-loaded swiper-slide-active" loading="lazy" src="images/team/3.png" style="width: 350px;">
+                        </div>
+                     </div>
+                     <div class="vehicle__card-content">
+                        <span class="vehicle__name">Ігор</span>
+                        <h1 style="font-size: 16px;">Займається ТО, діагностикою, ремонтами двигуна та ходової, досвід 10+ років</h1>
+                     </div>
+                     
+                  </div>
+                  <div class="vehicles__card card_hidden" style="display: none;">
+                     <div class="vehicles__imgs js-products-swiper swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                        <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                           <img class="vehicles__img swiper-slide swiper-lazy" loading="lazy" src="images/team/4.png">
+                        </div>
+                     </div>
+                     <div class="vehicle__card-content">
+                        <span class="vehicle__name">Руслан</span>
+                        <h1 style="font-size: 16px;">Старший інженер з досвідом 15 років, працює з електричними системами, токарними та фрезерними роботами.</h1>
+                     </div>
+                  </div>
+                  
+               </div>
+               <div class="landing__block-footer landing__block-footer_vehicles js-vehicles-more">
+                  <button id="see_more_button" class="btn btn_bordered-p" onclick="see_hidden_card_func()">Показати більше</button>
+               </div>
+            </div>
+        </section>
+         <section id="reviews" class="landing__block landing__block_reviews landing__block_background" style="background-color:rgba(255,255,255,0);color:rgba(255,255,255,0.8)">
+            <div class="container">
+               <div class="landing__block-title revealator-slideright revealator-once">
+                  <h3>Відгуки наших клієнтів</h3>
+                  <div class="section-title section-title--black" style="width:100%; text-align:left;font-size:15px;font-weight:normal;">
+                     (Натисніть для перегляду)
+                  </div>
+                  <div id="gallery2" class="special_11 special_0" style="width:100%; justify-content:start;">
+                     <a href="images/review/1.png" 
+                        data-pswp-width="654" 
+                        data-pswp-height="262" 
+                        target="_blank"
+                        class="gallery2_element special_9">
+                     <img src="images/review/1.png" alt="review" class="special_10" />
+                     </a>
+                     <a href="images/review/2.png" 
+                        data-pswp-width="662" 
+                        data-pswp-height="212" 
+                        target="_blank"
+                        class="gallery2_element special_9">
+                     <img src="images/review/2.png" alt="review" class="special_10" />
+                     </a>
+                     <a href="images/review/3.png" 
+                        data-pswp-width="662" 
+                        data-pswp-height="204" 
+                        target="_blank"
+                        class="gallery2_element special_9">
+                     <img src="images/review/3.png" alt="review" class="special_10" />
+                     </a>
+                     <a href="images/review/4.png" 
+                        data-pswp-width="664" 
+                        data-pswp-height="192" 
+                        target="_blank"
+                        class="gallery2_element special_9">
+                     <img src="images/review/4.png" alt="review" class="special_10" />
+                     </a>
+                     <a href="images/review/5.png" 
+                        data-pswp-width="664" 
+                        data-pswp-height="192" 
+                        target="_blank"
+                        class="gallery2_element special_9">
+                     <img src="images/review/5.png" alt="review" class="special_10" />
+                     </a>
+                     <a href="images/review/6.png" 
+                        data-pswp-width="664" 
+                        data-pswp-height="192" 
+                        target="_blank"
+                        class="gallery2_element special_9">
+                     <img src="images/review/6.png" alt="review" class="special_10" />
+                     </a>
+                     <a href="images/review/7.png" 
+                        data-pswp-width="664" 
+                        data-pswp-height="192" 
+                        target="_blank"
+                        class="gallery2_element special_9">
+                     <img src="images/review/7.png" alt="review" class="special_10" />
+                     </a>
+                     <a href="images/review/8.png" 
+                        data-pswp-width="664" 
+                        data-pswp-height="192" 
+                        target="_blank"
+                        class="gallery2_element special_9">
+                     <img src="images/review/8.png" alt="review" class="special_10" />
+                     </a>
+                     <a href="images/review/9.png" 
+                        data-pswp-width="664" 
+                        data-pswp-height="192" 
+                        target="_blank"
+                        class="gallery2_element special_9">
+                     <img src="images/review/9.png" alt="review" class="special_10" />
+                     </a>
+                     <a href="images/review/10.png" 
+                        data-pswp-width="664" 
+                        data-pswp-height="192" 
+                        target="_blank"
+                        class="gallery2_element special_9">
+                     <img src="images/review/10.png" alt="review" class="special_10" />
+                     </a>
+                     <a href="images/review/11.png" 
+                        data-pswp-width="664" 
+                        data-pswp-height="192" 
+                        target="_blank"
+                        class="gallery2_element special_9">
+                     <img src="images/review/11.png" alt="review" class="special_10" />
+                     </a>
+                     <a href="images/review/12.png" 
+                        data-pswp-width="664" 
+                        data-pswp-height="192" 
+                        target="_blank"
+                        class="gallery2_element special_9">
+                     <img src="images/review/12.png" alt="review" class="special_10" />
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="landing__car-imgs landing__car-imgs_reviews revealator-fade revealator-once">
+               <img src="images/car4.png">
+               <img src="images/kia-sportage-20.png">
+            </div>
+         </section>
+         <section id="experience" class="landing__block landing__block_experience" style="color:rgba(255,255,255,0.8)">
+            <div class="container">
+               <span class="landing__title-opacity">
+               Наш досвід <span>і гарантії</span>    </span>
+               <div class="landing__block-title revealator-slideright revealator-once">
+                  <h2>Наш досвід <span>і гарантії</span></h2>
+               </div>
+               <div class="experience-text">
+                  <div class="experience-text__block experience-text__block_left revealator-slideright revealator-once">
+                     <h3>Про Нас</h3>
+                     <p>Наш автосервіс відкритий уже 10+ років, ми стали популярним вибором серед одеситів та гостей міста, адже наші працівники з досвідом 12-15 років виконують ідеально свою роботу – так що клієнти задоволені та залишають безліч відгуків. Ми обслужили уже понад 2000 машин та кожному надаємо гарантію на виконані роботи до 40 000 км пробігу – пошукайте ще десь таку гарантію. Ми точно знаємо що вам потрібно відремонтувати швидко та якісно, тому у нас наймінімальніші терміни ремонтів та обслуговування.</p>
+                  </div>
+                  <div class="experience-text__block revealator-slideleft revealator-once">
+                     <img src="images/car3.png" alt="Наш досвід і гарантії" title="Наш досвід і гарантії">
+                  </div>
+               </div>
+               <div class="experience">
+                  <div class="experience__item revealator-slideup revealator-once">
+                     <img loading="lazy" src="fonts/repair-img.svg" alt="Гарантуємо технічну справність" title="Гарантуємо технічну справність">
+                     <div class="experience__item-text">
+                        <span class="experience__item-title">Гарантуємо технічну справність</span>
+                        <p>Ми надаємо клієнтам гарантію на виконані роботи на пробіг до 40 000 км, тому всі наші клієнти повертаються та приводять друзів, адже з гарантією ви розумієте, що ви точно застраховані, а повернення до нас по гарантійних питаннях становить 2-3%.</p>
+                     </div>
+                  </div>
+                  <div class="experience__item revealator-slideup revealator-once">
+                     <img loading="lazy" src="fonts/price-img.svg" alt="Прозора ціна" title="Прозора ціна">
+                     <div class="experience__item-text">
+                        <span class="experience__item-title">Прозора ціна</span>
+                        <p>Усі ціни є середніми на ринку попри деталі, масла та комплектуючі провідних західних країн. Які є найкращими на ринку, а наша якісна робота по ремонтах є з максимальною точність, завдяки інноваційному обладанню.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer" style="color:rgba(255,255,255,0.8); background:unset; background-color:rgba(0,0,0,0.9)">
+         <div class="container">
+            <div>
+               <div id="callback-form-5" class="callback-form revealator-slideup">
+                  <div class="callback-form__block callback-form__block_orange special_3" style="color:white">
+                     <div class="callback-form__text">
+                        <span>Залишити заявку</span>
+                        <span>Прямо зараз</span>
+                     </div>
+                     <p>Заповніть форму, щоб отримати безкоштовну консультацію</p>
+                     <span class="callback-form__label">Безкоштовна консультація</span>
+                  </div>
+                  <div class="callback-form__block callback-form__block_white js-callback-form-5">
+                     <form class="form ajax" id="second_form">
+                        <div class="form__input">
+                           <input type="text" name="name" id="name" placeholder="Ваше ім'я" required>
+                        </div>
+                        <div class="form__input">
+                           <input type="tel" name="phone" id="phone" placeholder="+38 (000) 000 - 00 - 00" required>
+                        </div>
+                        <div class="form__input">
+                           <input type="text" name="carname" id="carname" placeholder="Який ремонт вас цікавить?" required>
+                        </div>
+                        <button type="submit" class="btn btn_bordered-p" id="form_btn2">Залишити заявку</button>
+                     </form>
+                     <div class="callback_success">
+                        <svg width="80" height="80">
+                           <use href="fonts/sprite.svg#success"/>
+                        </svg>
+                        <span class="callback-form__title">НАДІСЛАНО</span>
+                        <p></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="contacts" class="footer__contacts">
+               <h3>Наші контакти</h3>
+               <div class="footer__contacts-list">
+                  <div class="nav__phones contact" style="background-color:rgba(48, 0, 0, 0.2); color:white">
+                     <span class="contact__tip">Натисни для дзвінка</span>
+                     <div class="contact__icon">
+                        <svg width="25" height="25">
+                           <path d="M24.287 17.666l-5.469-3.344a1.167 1.167 0 00-.459-.093 1.17 1.17 0 00-.909.43l-2.421 2.959a18.084 18.084 0 01-8.652-8.652l2.959-2.422a1.167 1.167 0 00.432-.907 1.167 1.167 0 00-.1-.46L7.324.708a1.181 1.181 0 00-1.082-.709 1.171 1.171 0 00-.261.03L.903 1.201A1.173 1.173 0 000 2.344 22.654 22.654 0 0022.656 25a1.174 1.174 0 001.144-.908l1.171-5.078a1.19 1.19 0 00.029-.261 1.184 1.184 0 00-.713-1.087z" fill="#ffa200"/>
+                        </svg>
+                     </div>
+                     <div class="contact__content contact__content_phones" style=" color:white">
+                        <a href="tel:380632044804" style="margin:0;color:white">+380 63 204 48 04</a>
+                     </div>
+
+                  </div>
+                  
+                  <div class="contact" style="background-color:rgba(48, 0, 0, 0.2); color:white">
+                     <div class="contact__icon">
+                        <svg width="25" height="25">
+                            <path xmlns="http://www.w3.org/2000/svg" d="M8.412 24.496a1.172 1.172 0 001.927 0c7.094-10.285 8.411-11.341 8.411-15.121A9.375 9.375 0 009.375 0 9.375 9.375 0 000 9.375c0 3.78 1.317 4.836 8.412 15.121zm.963-11.214a3.906 3.906 0 01-3.906-3.907 3.906 3.906 0 013.906-3.906 3.906 3.906 0 013.906 3.906 3.906 3.906 0 01-3.906 3.906z" fill="#ffa200"/>
+                        </svg>
+                     </div>
+                     <div class="contact__content" style=" color:white">
+                        <a target="blank_" href="https://goo.gl/maps/JcSHZWpwhWYBrVAK8" style="color:white">м.Одеса проспект Академіка Глушка 29/2
+                        </a>
+                     </div>
+                     
+                  </div>
+               </div>
+            </div>
+            <!-- <div class="footer__about">
+               <div class="footer__logo" style="display: flex; justify-content: center;">
+                  <a href="javascript:void(0)" title="Auto Mix">
+                  <img src="images/logo.png" alt="Auto Mix" title="Auto Mix" style="width: 100px; height: 100px;">
+                  </a>
+               </div>
+               <div>
+                  <p>Ми почали свою діяльність у 2019 році та стали популярним вибором серед тих, хто шукає високоякісний автомобіль за доступною ціною. Купуючи авто зі США, наші клієнти економлять до 40% від вартості подібних авто в Україні.
+                     Ми гарантуємо якість кожного автомобіля, оскільки він проходить перевірку на технічний стан перед тим, як його відправити до України. Американський авторинок завжди був відомий своїм широким асортиментом вибору автомобілей по доступній ціні. Ми з гордістю пропонуємо нашим клієнтам ці автомобілі, які стануть надійними та стильними спутниками на дорогах України.
+                  </p>
+               </div>
+               <div class="footer__socials socials">
+                  <a target="_blank" href="https://www.facebook.com/sto.automix/">
+                     <svg width="25" height="25">
+                        <path xmlns="http://www.w3.org/2000/svg" d="M24.218 12.109A12.107 12.107 0 0012.109 0 12.107 12.107 0 000 12.109a12.114 12.114 0 0010.217 11.963V15.61H7.141v-3.5h3.076V9.442c0-3.035 1.807-4.711 4.574-4.711a18.637 18.637 0 012.711.236v2.979h-1.528a1.75 1.75 0 00-1.973 1.891v2.273h3.358l-.537 3.5h-2.821v8.462a12.114 12.114 0 0010.217-11.963z"/>
+                     </svg>
+                  </a>
+                  <a target="_blank" href="https://www.instagram.com/sto.automix/">
+                     <svg width="25" height="25">
+                        <path xmlns="http://www.w3.org/2000/svg" d="M10.946 5.331a5.6 5.6 0 00-5.61 5.61 5.6 5.6 0 005.61 5.61 5.6 5.6 0 005.61-5.61 5.6 5.6 0 00-5.61-5.61zm0 9.258a3.654 3.654 0 01-3.647-3.648 3.651 3.651 0 013.647-3.647 3.651 3.651 0 013.648 3.647 3.654 3.654 0 01-3.648 3.648zm7.148-9.487a1.309 1.309 0 00-1.309-1.309 1.309 1.309 0 00-1.306 1.308 1.306 1.306 0 001.309 1.309 1.306 1.306 0 001.307-1.309zM21.81 6.43a6.476 6.476 0 00-1.768-4.585A6.519 6.519 0 0015.457.077c-1.807-.1-7.222-.1-9.028 0A6.509 6.509 0 001.844 1.84 6.5 6.5 0 00.079 6.421c-.1 1.807-.1 7.222 0 9.028a6.476 6.476 0 001.766 4.589 6.527 6.527 0 004.585 1.768c1.807.1 7.222.1 9.028 0a6.476 6.476 0 004.585-1.768 6.519 6.519 0 001.768-4.585c.102-1.807.102-7.217 0-9.024zm-2.331 10.961a3.693 3.693 0 01-2.082 2.08c-1.44.571-4.858.439-6.45.439s-5.015.127-6.45-.439a3.693 3.693 0 01-2.08-2.08c-.571-1.44-.439-4.858-.439-6.45s-.127-5.015.439-6.45a3.693 3.693 0 012.08-2.08c1.44-.571 4.858-.439 6.45-.439s5.015-.127 6.45.439a3.693 3.693 0 012.082 2.08c.571 1.44.439 4.858.439 6.45s.13 5.015-.439 6.45z"/>
+                     </svg>
+                  </a>
+               </div>
+            </div> -->
+            <div class="mapouter" style="margin: 0 auto;">
+               <div class="gmap_canvas">
+                  <iframe src="https://maps.google.com/maps?q=%D0%BC.%D0%9E%D0%B4%D0%B5%D1%81%D0%B0%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D0%BA%D0%B0%20%D0%93%D0%BB%D1%83%D1%88%D0%BA%D0%B0%2029/2&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" class="google-map"></iframe>
+                  <style> .maprouter a{color:#fff !important;position:absolute !important;top:0 !important;z-index:0 !important;}</style>
+                  <style>.gmap_canvas{overflow:hidden;height:350px;width:1080px}.gmap_canvas iframe{position:relative;z-index:2}</style>
+               </div>
+            </div>
+            
+                  <div class="footer__bottom">
+               <span>Auto Mix © 2023. Всі права захищено</span>
+            </div>
+         </div>
+        
+      </footer>
+      <div class="popup__form" id="popup__form">
+        <a href="" class="popup__form__close">X</a>
+        <div class="popup__form__title">Залишити заявку</div>
+        <form action="" id="popup_form">
+            <input type="text" class="popup__form__input" name="name" placeholder="Ваше ім`я">
+            <input type="tel" class="popup__form__input" name="phone" placeholder="+38 (000) 000 00-00">
+            <input type="submit" value="Залишити заявку" class="popup__form__button" id="popup__form__button">
+
+        </form>
+    </div>
+      <script type="text/javascript" src="js/vendor.min.js"></script>
+      <script type="text/javascript" src="js/app.min.js"></script>
+      <script type="text/javascript" src="js/form.js"></script>
+      <script>
+         //не робили деякі функції. Костилі непереможні.
+         
+         sl_1_arr = document.querySelectorAll('.slide_1_8000_block');
+         sl_2_arr = document.querySelectorAll('.slide_2_11000_block');
+         sl_3_arr = document.querySelectorAll('.slide_3_15000_block');
+         
+         function loool(){
+         
+         
+         	for (iii = 0; iii < sl_1_arr.length; iii++){
+         		
+         		sl_1_arr[iii].classList.add('swiper-slide');
+         		
+         	}
+         	for (iii = 0; iii < sl_2_arr.length; iii++){
+         		
+         		sl_2_arr[iii].classList.add('swiper-slide');
+         		
+         	}
+         	for (iii = 0; iii < sl_3_arr.length; iii++){
+         		
+         		sl_3_arr[iii].classList.add('swiper-slide');
+         		
+         	}
+         	
+         }
+         
+         loool();
+         setTimeout(loool,1000);
+         
+         function price_1_func(){
+         	
+         	for (iii = 0; iii < sl_1_arr.length; iii++){
+         		
+         		sl_1_arr[iii].style.display = 'flex';
+         		
+         	}
+         	
+         	for (iii = 0; iii < sl_2_arr.length; iii++){
+         		
+         		sl_2_arr[iii].style.display = 'none';
+         		
+         	}
+         	
+         	for (iii = 0; iii < sl_3_arr.length; iii++){
+         		
+         		sl_3_arr[iii].style.display = 'none';
+         		
+         	}
+         	
+         	setTimeout(loool,300);
+         	
+         }
+         
+         function price_2_func(){
+         	
+         	for (iii = 0; iii < sl_2_arr.length; iii++){
+         		
+         		sl_2_arr[iii].style.display = 'flex';
+         		
+         	}
+         	
+         	for (iii = 0; iii < sl_1_arr.length; iii++){
+         		
+         		sl_1_arr[iii].style.display = 'none';
+         		
+         	}
+         	
+         	for (iii = 0; iii < sl_3_arr.length; iii++){
+         		
+         		sl_3_arr[iii].style.display = 'none';
+         		
+         	}
+         	
+         	setTimeout(loool,300);
+         	
+         }
+         
+         function price_3_func(){
+         	
+         	for (iii = 0; iii < sl_3_arr.length; iii++){
+         		
+         		sl_3_arr[iii].style.display = 'flex';
+         		
+         	}
+         	
+         	for (iii = 0; iii < sl_2_arr.length; iii++){
+         		
+         		sl_2_arr[iii].style.display = 'none';
+         		
+         	}
+         	
+         	for (iii = 0; iii < sl_1_arr.length; iii++){
+         		
+         		sl_1_arr[iii].style.display = 'none';
+         		
+         	}
+         	
+         	setTimeout(loool,300);
+         	
+         }
+         
+         setTimeout(price_1_func,1000);
+         setTimeout(price_1_func,2000);
+         
+         
+         
+         
+         hidde_card_container = document.querySelectorAll('.card_hidden');
+         
+         for (iii = 0; iii < hidde_card_container.length; iii++){
+         	
+         	hidde_card_container[iii].style.display = 'none';
+         	
+         }
+         
+         function see_hidden_card_func(){
+         	
+         	for (iii = 0; iii < hidde_card_container.length; iii++){
+         		
+         		hidde_card_container[iii].style.display = 'flex';
+         		
+         	}
+         	
+         	see_more_button.style.display = 'none';
+         	
+         }
+         
+      </script>
+      <!--GALLERY "PHOTOSWIPE" START-->
+      <link type="text/css" rel="stylesheet" href='photoswipe/photoswipe.css@v=ololo.css'/>
+      <script type="module">
+         import PhotoSwipeLightbox from './photoswipe/photoswipe-lightbox.esm.min.js';
+         import PhotoSwipe from './photoswipe/photoswipe.esm.min.js';
+         
+         const lightbox = new PhotoSwipeLightbox({
+         	gallery: '#gallery2',
+         	children: 'a',
+         	pswpModule: PhotoSwipe
+         });
+         
+         lightbox.init();
+         
+      </script>
+      <!--GALLERY "PHOTOSWIPE" END-->
+   </body>
+</html>

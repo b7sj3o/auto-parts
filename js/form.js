@@ -7,7 +7,6 @@ const url = `${baseUrl}/thanks/thanks.html`;
 
 const popupForm = document.getElementById('popup__form');
 const closeBtn = document.querySelector('.popup__form__close');
-let style = document.createElement('style');
 
 function showForm() {
     popupForm.style.display = 'flex';
@@ -15,10 +14,7 @@ function showForm() {
     
     document.body.style.overflow = 'hidden';
     document.body.style.pointerEvents = 'none';
-    document.body.style.userSelect = 'none';    
 
-    style.innerText = `body::after { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: ${document.body.scrollHeight}px; background-color: rgba(0,0,0,0.8); z-index: 190; }`;
-    document.body.appendChild(style)
 }
 
 closeBtn.addEventListener('click', function(e) {
@@ -26,8 +22,6 @@ closeBtn.addEventListener('click', function(e) {
     popupForm.style.display = 'none';
     document.body.style.overflow = 'auto';
     document.body.style.pointerEvents = 'all';
-    document.body.style.userSelect = 'all';  
-    document.body.removeChild(style)
 
 })
 
